@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<!-- HIT template: Writing-v3.0 -->
+		<!-- The following snippet enables the 'responsive' behavior on smaller screens -->
+		<meta content="width=device-width,initial-scale=1" name="viewport" />
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+		 crossorigin="anonymous" />
+		<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" />-->
+
+		<script src="https://use.fontawesome.com/abbf5a27e7.js"></script>
+
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ktd4869/ktd4869.github.io@3.0/src/main/resources/static/css/style.css" />
+
+		<!-- <script src="src/main/resources/static/js/jquery-2.1.4.min.js"></script> -->
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+		 crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+		 crossorigin="anonymous"></script>
+
+		<!-- 修改为http -->
+		<script src="src/main/resources/static/js/annotate-local.js"></script>
+
+
+		<style>
+			.B1{ background-color: #ffffe6; }
+    .B2{ background-color: #ffffcc; }
+    .B3{ background-color: #ffffb3; }
+    .B4{ background-color: #ffff99; }
+    .B5{ background-color: #ffff80; }
+    .B6{ background-color: #ffff66; }
+    .B7{ background-color: #ffff4d; }
+    .B8{ background-color: #ffff33; }
+    .B9{ background-color: #ffff1a; }
+    .B10{ background-color: #ffff00; }
+</style>
+
+		<section class="container" id="Writing">
+			<div class="row">
+
+				<div class="col-md-12">
+					<div class="row">
+						<div class="col-md-12" id="instructions">
+
+							<div class="card border-dark mb-3">
+								<div class="card-header">
+									<a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+										Instructions! (click to expand/collapse)
+									</a>
+								</div>
+								<div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+									<div class="card-body">
+										<h4>Instructions</h4>
+										<p>Below are two technical articles about cyber security, you will be asked to annotate all technical words
+											or phrases and measure the difficulty level. See the task tutorial and difficulty level standard below.</p>
+										<p>We appreciate your patience for answering the question. Filling randomly will not be approved.</p>
+										<!--<h4>Estimated Time for Task Completion</h4>
+										<p>We recommend a time of 5 minutes per article. Click each article to expand the content and start
+											annotation. Click Save button at the bottom of the content to save your annotations for each article. After
+											completing all articles, click the Submit button.</p>-->
+										<h4>5 Tasks</h4>
+										<p>We have 5 Tasks as listed below. Please complete them one by one.</p>
+										<p>
+											<ul>
+												<li>Task1(About You): answer five questions about you.</li>
+												<li>Task2(Article1): label technical words/phrases in Article1.</li>
+												<li>Task3(Questions About Article1): answer some questions about Article1.</li>
+												<li>Task4(Article1): label technical words/phrases in Article2.</li>
+												<li>Task5(Questions About Article2): answer some questions about Article2.</li>
+											</ul>
+										</p>
+										<hr />
+										<div class="spacer"></div>
+
+										<a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+											Collapse instructions.
+										</a>
+
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-12" id="Task">
+							<div class="card border-dark mb-3">
+								<div class="card-header">
+									<a data-toggle="collapse" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+										Task Tutorials! (click to expand/collapse)
+									</a>
+								</div>
+								<div id="collapseTwo" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+									<div class="card-body">
+										<h4>Task Tutorial</h4>
+										<p>
+											<ol>
+												<li>Click to expand each task one by one to answer questions or label articles.</li>
+												<li>In Task 2 or 4, read the article, select the technical word/phrase (<span style="font-weight:bold;color:red">phrase: 5 words maximum</span>), and select its difficulty level (1~10) in the
+													prompt (the word/phrase will be highlighted in selected color).</li>
+												<li><span style="font-weight:bold;color:red">Right click</span> your highlighted words(s) to delete an annotation.</li>
+												<li>When you select the phrase which contains highlighted words, you need to remove (right click) the highlighted words first.</li>
+												<li>Click "Save Task" button to save your answers (the button will turn to be green).</li>
+												<li>Click to collapse the completed task.</li>
+												<li>Submit after completing all five tasks.</li>
+											</ol>
+										</p>
+
+										<h4>Difficulty Level Standard</h4>
+										<ul>
+											<li><strong>1~2 Very easy&nbsp;</strong>
+												<ul>
+													<li>eg, email, mobile</li>
+												</ul>
+											</li>
+											<li><strong>&nbsp;3~4 Easy</strong>
+												<ul>
+													<li>eg, compromise, file heritage</li>
+												</ul>
+											</li>
+											<li><strong>5~6 Normal</strong>
+												<ul>
+													<li>eg, defender</li>
+												</ul>
+											</li>
+											<li><strong>7~8 Hard</strong>
+												<ul>
+													<li>eg, evade</li>
+												</ul>
+											</li>
+											<li><strong>9~10 Challenging</strong>
+												<ul>
+													<li>eg, Distributed Denial of Service attack</li>
+												</ul>
+											</li>
+										</ul>
+										<div class="spacer"></div>
+
+										<a data-toggle="collapse" href="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">
+											Collapse instructions.
+										</a>
+
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="spacer"></div>
+
+					<!-- About You -->
+
+					<div class="row">
+						<div class="col-md-12" id="htmlContainerAbout">
+							<div class="card">
+								<div class="card-header">
+
+									<a data-toggle="collapse" href="#txt_about,#linkabout" aria-expanded="false" aria-controls="about_txt">
+										1.About You (Click to expand)
+									</a>
+								</div>
+								<div id="txt_about" class="collapse hide" role="tabpanel">
+									<h4>Please answer all of the following questions about you.</h4>
+									<div class="card-body text1" ; id="about_txt">
+										<div class="panel panel-default">
+											<div class="panel-body">
+												<label>1.Gender</label>
+												<select id="gender" class="form-control" name="Gender">
+													<option selected="selected" value="0">- select one -</option>
+													<option value="F">Female</option>
+													<option value="M">Male</option>
+													<option value="O">Prefer not to say</option>
+												</select>
+											</div>
+										</div>
+
+
+										<div class="panel panel-default">
+											<div class="panel-body">
+												<label>2.Age</label>
+												<select id="age" class="form-control" name="Age">
+													<option selected="selected" value="0">- select one -</option>
+													<option value="1">&lt;18</option>
+													<option value="2">18~25</option>
+													<option value="3">26~30</option>
+													<option value="4">31~35</option>
+													<option value="5">36~40</option>
+													<option value="6">41~50</option>
+													<option value="7">&gt;50</option>
+												</select>
+											</div>
+										</div>
+
+										<div class="panel panel-default">
+											<div class="panel-body">
+												<label>3.Highest education</label>
+												<select id="education" class="form-control" name="Education">
+													<option selected="selected" value="0">- select one -</option>
+													<option value="1">Elementary school (primary school)</option>
+													<option value="2">Secondary school (high school)</option>
+													<option value="3">Undergraduate college or university (for bachelor's degree)</option>
+													<option value="4">Graduate or professional school (for master's or doctoral degree)</option>
+													<option value="5">None of above</option>
+												</select>
+											</div>
+										</div>
+
+										<div class="panel panel-default">
+											<div class="panel-body">
+												<label>4.Do you have IT background?</label>
+												<select id="background" class="form-control" name="Background">
+													<option selected="selected" value="0">- select one -</option>
+													<option value="Y">Yes</option>
+													<option value="N">No</option>
+													<option value="O">I'm not sure</option>
+												</select>
+											</div>
+										</div>
+
+										<div class="panel panel-default">
+											<div class="panel-body">
+												<label>5.Are you native speaker of English?</label>
+												<select id="nativespeaker" class="form-control" name="NativeSpeaker">
+													<option selected="selected" value="0">- select one -</option>
+													<option value="Y">Yes</option>
+													<option value="N">No</option>
+												</select>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<button type="button" id="testButtonAbout" class="btn btn-primary pointer" style="text-align: center;">Save
+									Task1</button>
+							</div>
+							<div class="card-body link" ; id="linkabout">
+								<a data-toggle="collapse" href="#txt_about,#linkabout" aria-expanded="true" aria-controls="txt_about">
+									Click to collapse Task1.
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="spacer"></div>
+
+
+					<!-- Articel 1 -->
+					<div class="row">
+						<div class="col-md-12" id="htmlcontainer1">
+							<div class="card">
+								<div class="card-header">
+
+									<a data-toggle="collapse" href="#txt_1,#link1" aria-expanded="false" aria-controls="1_txt">
+										2.Article1 (Click to expand)
+									</a>
+								</div>
+								<div id="txt_1" class="collapse hide" role="tabpanel">
+									<div class="card-body text" ; id="1_txt">
+										<!--
+								<p id=p0><span class='token pointer' id='tok-1_txt-0'>From</span><span class='token pointer' id='tok-1_txt-1'>Brick</span><span class='token pointer' id='tok-1_txt-2'>to</span><span class='token pointer' id='tok-1_txt-3'>Brilliance:</span><span class='token pointer' id='tok-1_txt-4'>It's</span><span class='token pointer' id='tok-1_txt-5'>Time</span><span class='token pointer' id='tok-1_txt-6'>for</span><span class='token pointer' id='tok-1_txt-7'>the</span><span class='token pointer' id='tok-1_txt-8'>Next</span><span class='token pointer' id='tok-1_txt-9'>Generation</span><span class='token pointer' id='tok-1_txt-10'>Firewall</span></p>
+								<p id=p11></p>
+								<p id=p11><span class='token pointer' id='tok-1_txt-11'>In</span><span class='token pointer' id='tok-1_txt-12'>our</span><span class='token pointer' id='tok-1_txt-13'>modern,</span><span class='token pointer' id='tok-1_txt-14'>consumer-driven</span><span class='token pointer' id='tok-1_txt-15'>world,</span><span class='token pointer' id='tok-1_txt-16'>it's</span><span class='token pointer' id='tok-1_txt-17'>extremely</span><span class='token pointer' id='tok-1_txt-18'>rare</span><span class='token pointer' id='tok-1_txt-19'>to</span><span class='token pointer' id='tok-1_txt-20'>come</span><span class='token pointer' id='tok-1_txt-21'>across</span><span class='token pointer' id='tok-1_txt-22'>someone</span><span class='token pointer' id='tok-1_txt-23'>without</span><span class='token pointer' id='tok-1_txt-24'>a</span><span class='token pointer' id='tok-1_txt-25'>mobile</span><span class='token pointer' id='tok-1_txt-26'>phone.</span><span class='token pointer' id='tok-1_txt-27'>What</span><span class='token pointer' id='tok-1_txt-28'>started</span><span class='token pointer' id='tok-1_txt-29'>as</span><span class='token pointer' id='tok-1_txt-30'>a</span><span class='token pointer' id='tok-1_txt-31'>luxury</span><span class='token pointer' id='tok-1_txt-32'>item</span><span class='token pointer' id='tok-1_txt-33'>that</span><span class='token pointer' id='tok-1_txt-34'>enabled</span><span class='token pointer' id='tok-1_txt-35'>phone</span><span class='token pointer' id='tok-1_txt-36'>calls</span><span class='token pointer' id='tok-1_txt-37'>from</span><span class='token pointer' id='tok-1_txt-38'>outside</span><span class='token pointer' id='tok-1_txt-39'>the</span><span class='token pointer' id='tok-1_txt-40'>home</span><span class='token pointer' id='tok-1_txt-41'>has</span><span class='token pointer' id='tok-1_txt-42'>become</span><span class='token pointer' id='tok-1_txt-43'>mandatory</span><span class='token pointer' id='tok-1_txt-44'>for</span><span class='token pointer' id='tok-1_txt-45'>not</span><span class='token pointer' id='tok-1_txt-46'>only</span><span class='token pointer' id='tok-1_txt-47'>voice,</span><span class='token pointer' id='tok-1_txt-48'>but</span><span class='token pointer' id='tok-1_txt-49'>other</span><span class='token pointer' id='tok-1_txt-50'>daily</span><span class='token pointer' id='tok-1_txt-51'>functions</span><span class='token pointer' id='tok-1_txt-52'>and</span><span class='token pointer' id='tok-1_txt-53'>operations</span><span class='token pointer' id='tok-1_txt-54'>like</span><span class='token pointer' id='tok-1_txt-55'>calendars,</span><span class='token pointer' id='tok-1_txt-56'>reminders,</span><span class='token pointer' id='tok-1_txt-57'>music,</span><span class='token pointer' id='tok-1_txt-58'>pictures,</span><span class='token pointer' id='tok-1_txt-59'>apps</span><span class='token pointer' id='tok-1_txt-60'>and</span><span class='token pointer' id='tok-1_txt-61'>more.</span></p>
+								<p id=p62></p>
+								<p id=p62><span class='token pointer' id='tok-1_txt-62'>The</span><span class='token pointer' id='tok-1_txt-63'>smartphone</span><span class='token pointer' id='tok-1_txt-64'>continues</span><span class='token pointer' id='tok-1_txt-65'>to</span><span class='token pointer' id='tok-1_txt-66'>add</span><span class='token pointer' id='tok-1_txt-67'>new</span><span class='token pointer' id='tok-1_txt-68'>features</span><span class='token pointer' id='tok-1_txt-69'>while</span><span class='token pointer' id='tok-1_txt-70'>maintaining</span><span class='token pointer' id='tok-1_txt-71'>its</span><span class='token pointer' id='tok-1_txt-72'>trusted</span><span class='token pointer' id='tok-1_txt-73'>and</span><span class='token pointer' id='tok-1_txt-74'>reliable</span><span class='token pointer' id='tok-1_txt-75'>performance,</span><span class='token pointer' id='tok-1_txt-76'>customized</span><span class='token pointer' id='tok-1_txt-77'>options</span><span class='token pointer' id='tok-1_txt-78'>and</span><span class='token pointer' id='tok-1_txt-79'>attractive</span><span class='token pointer' id='tok-1_txt-80'>visual</span><span class='token pointer' id='tok-1_txt-81'>features,</span><span class='token pointer' id='tok-1_txt-82'>but</span><span class='token pointer' id='tok-1_txt-83'>most</span><span class='token pointer' id='tok-1_txt-84'>importantly</span><span class='token pointer' id='tok-1_txt-85'>it</span><span class='token pointer' id='tok-1_txt-86'>has</span><span class='token pointer' id='tok-1_txt-87'>stayed</span><span class='token pointer' id='tok-1_txt-88'>committed</span><span class='token pointer' id='tok-1_txt-89'>to</span><span class='token pointer' id='tok-1_txt-90'>its</span><span class='token pointer' id='tok-1_txt-91'>primary</span><span class='token pointer' id='tok-1_txt-92'>purpose</span><span class='token pointer' id='tok-1_txt-93'>-</span><span class='token pointer' id='tok-1_txt-94'>communication.</span><span class='token pointer' id='tok-1_txt-95'>The</span><span class='token pointer' id='tok-1_txt-96'>ability</span><span class='token pointer' id='tok-1_txt-97'>to</span><span class='token pointer' id='tok-1_txt-98'>incorporate</span><span class='token pointer' id='tok-1_txt-99'>improved</span><span class='token pointer' id='tok-1_txt-100'>features</span><span class='token pointer' id='tok-1_txt-101'>while</span><span class='token pointer' id='tok-1_txt-102'>continuing</span><span class='token pointer' id='tok-1_txt-103'>to</span><span class='token pointer' id='tok-1_txt-104'>deliver</span><span class='token pointer' id='tok-1_txt-105'>a</span><span class='token pointer' id='tok-1_txt-106'>quality</span><span class='token pointer' id='tok-1_txt-107'>product</span><span class='token pointer' id='tok-1_txt-108'>can</span><span class='token pointer' id='tok-1_txt-109'>be</span><span class='token pointer' id='tok-1_txt-110'>challenging.</span><span class='token pointer' id='tok-1_txt-111'>So,</span><span class='token pointer' id='tok-1_txt-112'>if</span><span class='token pointer' id='tok-1_txt-113'>we</span><span class='token pointer' id='tok-1_txt-114'>were</span><span class='token pointer' id='tok-1_txt-115'>to</span><span class='token pointer' id='tok-1_txt-116'>extend</span><span class='token pointer' id='tok-1_txt-117'>the</span><span class='token pointer' id='tok-1_txt-118'>analogy</span><span class='token pointer' id='tok-1_txt-119'>into</span><span class='token pointer' id='tok-1_txt-120'>enterprise</span><span class='token pointer' id='tok-1_txt-121'>security,</span><span class='token pointer' id='tok-1_txt-122'>what</span><span class='token pointer' id='tok-1_txt-123'>would</span><span class='token pointer' id='tok-1_txt-124'>be</span><span class='token pointer' id='tok-1_txt-125'>the</span><span class='token pointer' id='tok-1_txt-126'>smartphone</span><span class='token pointer' id='tok-1_txt-127'>of</span><span class='token pointer' id='tok-1_txt-128'>today</span><span class='token pointer' id='tok-1_txt-129'>and</span><span class='token pointer' id='tok-1_txt-130'>why</span><span class='token pointer' id='tok-1_txt-131'>should</span><span class='token pointer' id='tok-1_txt-132'>companies</span><span class='token pointer' id='tok-1_txt-133'>consider</span><span class='token pointer' id='tok-1_txt-134'>adopting</span><span class='token pointer' id='tok-1_txt-135'>it?</span></p>
+								<p id=p136></p>
+								<p id=p136><span class='token pointer' id='tok-1_txt-136'>A</span><span class='token pointer' id='tok-1_txt-137'>strong</span><span class='token pointer' id='tok-1_txt-138'>argument</span><span class='token pointer' id='tok-1_txt-139'>can</span><span class='token pointer' id='tok-1_txt-140'>be</span><span class='token pointer' id='tok-1_txt-141'>made</span><span class='token pointer' id='tok-1_txt-142'>for</span><span class='token pointer' id='tok-1_txt-143'>the</span><span class='token pointer' id='tok-1_txt-144'>next</span><span class='token pointer' id='tok-1_txt-145'>generation</span><span class='token pointer' id='tok-1_txt-146'>firewall</span><span class='token pointer' id='tok-1_txt-147'>(NGFW),</span><span class='token pointer' id='tok-1_txt-148'>which</span><span class='token pointer' id='tok-1_txt-149'>is</span><span class='token pointer' id='tok-1_txt-150'>poised</span><span class='token pointer' id='tok-1_txt-151'>to</span><span class='token pointer' id='tok-1_txt-152'>deliver</span><span class='token pointer' id='tok-1_txt-153'>powerful</span><span class='token pointer' id='tok-1_txt-154'>new</span><span class='token pointer' id='tok-1_txt-155'>capabilities</span><span class='token pointer' id='tok-1_txt-156'>and</span><span class='token pointer' id='tok-1_txt-157'>further</span><span class='token pointer' id='tok-1_txt-158'>revolutionize</span><span class='token pointer' id='tok-1_txt-159'>protection</span><span class='token pointer' id='tok-1_txt-160'>for</span><span class='token pointer' id='tok-1_txt-161'>the</span><span class='token pointer' id='tok-1_txt-162'>enterprise</span><span class='token pointer' id='tok-1_txt-163'>edge</span><span class='token pointer' id='tok-1_txt-164'>with</span><span class='token pointer' id='tok-1_txt-165'>added</span><span class='token pointer' id='tok-1_txt-166'>security,</span><span class='token pointer' id='tok-1_txt-167'>control,</span><span class='token pointer' id='tok-1_txt-168'>efficiency,</span><span class='token pointer' id='tok-1_txt-169'>deployment</span><span class='token pointer' id='tok-1_txt-170'>and</span><span class='token pointer' id='tok-1_txt-171'>management.</span><span class='token pointer' id='tok-1_txt-172'>According</span><span class='token pointer' id='tok-1_txt-173'>to</span><span class='token pointer' id='tok-1_txt-174'>Gartner,</span><span class='token pointer' id='tok-1_txt-175'>less</span><span class='token pointer' id='tok-1_txt-176'>than</span><span class='token pointer' id='tok-1_txt-177'>20</span><span class='token pointer' id='tok-1_txt-178'>percent</span><span class='token pointer' id='tok-1_txt-179'>of</span><span class='token pointer' id='tok-1_txt-180'>enterprise</span><span class='token pointer' id='tok-1_txt-181'>Internet</span><span class='token pointer' id='tok-1_txt-182'>connections</span><span class='token pointer' id='tok-1_txt-183'>today</span><span class='token pointer' id='tok-1_txt-184'>are</span><span class='token pointer' id='tok-1_txt-185'>secured</span><span class='token pointer' id='tok-1_txt-186'>using</span><span class='token pointer' id='tok-1_txt-187'>NGFWs,</span><span class='token pointer' id='tok-1_txt-188'>and</span><span class='token pointer' id='tok-1_txt-189'>by</span><span class='token pointer' id='tok-1_txt-190'>year-end</span><span class='token pointer' id='tok-1_txt-191'>2014,</span><span class='token pointer' id='tok-1_txt-192'>this</span><span class='token pointer' id='tok-1_txt-193'>will</span><span class='token pointer' id='tok-1_txt-194'>rise</span><span class='token pointer' id='tok-1_txt-195'>to</span><span class='token pointer' id='tok-1_txt-196'>35</span><span class='token pointer' id='tok-1_txt-197'>percent</span><span class='token pointer' id='tok-1_txt-198'>of</span><span class='token pointer' id='tok-1_txt-199'>the</span><span class='token pointer' id='tok-1_txt-200'>installed</span><span class='token pointer' id='tok-1_txt-201'>base,</span><span class='token pointer' id='tok-1_txt-202'>with</span><span class='token pointer' id='tok-1_txt-203'>70</span><span class='token pointer' id='tok-1_txt-204'>percent</span><span class='token pointer' id='tok-1_txt-205'>of</span><span class='token pointer' id='tok-1_txt-206'>new</span><span class='token pointer' id='tok-1_txt-207'>enterprise</span><span class='token pointer' id='tok-1_txt-208'>edge</span><span class='token pointer' id='tok-1_txt-209'>purchases</span><span class='token pointer' id='tok-1_txt-210'>being</span><span class='token pointer' id='tok-1_txt-211'>NGFWs.</span></p>
+								<p id=p212></p>
+								<p id=p212><span class='token pointer' id='tok-1_txt-212'>As</span><span class='token pointer' id='tok-1_txt-213'>enterprises</span><span class='token pointer' id='tok-1_txt-214'>continue</span><span class='token pointer' id='tok-1_txt-215'>to</span><span class='token pointer' id='tok-1_txt-216'>require</span><span class='token pointer' id='tok-1_txt-217'>larger,</span><span class='token pointer' id='tok-1_txt-218'>faster</span><span class='token pointer' id='tok-1_txt-219'>and</span><span class='token pointer' id='tok-1_txt-220'>more</span><span class='token pointer' id='tok-1_txt-221'>nimble</span><span class='token pointer' id='tok-1_txt-222'>networks,</span><span class='token pointer' id='tok-1_txt-223'>many</span><span class='token pointer' id='tok-1_txt-224'>have</span><span class='token pointer' id='tok-1_txt-225'>often</span><span class='token pointer' id='tok-1_txt-226'>faced</span><span class='token pointer' id='tok-1_txt-227'>making</span><span class='token pointer' id='tok-1_txt-228'>trade-offs;</span><span class='token pointer' id='tok-1_txt-229'>either</span><span class='token pointer' id='tok-1_txt-230'>sacrifice</span><span class='token pointer' id='tok-1_txt-231'>performance</span><span class='token pointer' id='tok-1_txt-232'>in</span><span class='token pointer' id='tok-1_txt-233'>order</span><span class='token pointer' id='tok-1_txt-234'>to</span><span class='token pointer' id='tok-1_txt-235'>add</span><span class='token pointer' id='tok-1_txt-236'>more</span><span class='token pointer' id='tok-1_txt-237'>layers</span><span class='token pointer' id='tok-1_txt-238'>of</span><span class='token pointer' id='tok-1_txt-239'>security</span><span class='token pointer' id='tok-1_txt-240'>beyond</span><span class='token pointer' id='tok-1_txt-241'>the</span><span class='token pointer' id='tok-1_txt-242'>traditional</span><span class='token pointer' id='tok-1_txt-243'>stateful</span><span class='token pointer' id='tok-1_txt-244'>firewall</span><span class='token pointer' id='tok-1_txt-245'>or</span><span class='token pointer' id='tok-1_txt-246'>don't</span><span class='token pointer' id='tok-1_txt-247'>implement</span><span class='token pointer' id='tok-1_txt-248'>the</span><span class='token pointer' id='tok-1_txt-249'>new</span><span class='token pointer' id='tok-1_txt-250'>protections</span><span class='token pointer' id='tok-1_txt-251'>necessary</span><span class='token pointer' id='tok-1_txt-252'>to</span><span class='token pointer' id='tok-1_txt-253'>protect</span><span class='token pointer' id='tok-1_txt-254'>against</span><span class='token pointer' id='tok-1_txt-255'>many</span><span class='token pointer' id='tok-1_txt-256'>of</span><span class='token pointer' id='tok-1_txt-257'>the</span><span class='token pointer' id='tok-1_txt-258'>latest</span><span class='token pointer' id='tok-1_txt-259'>threats.</span></p>
+								<p id=p260></p>
+								<p id=p260><span class='token pointer' id='tok-1_txt-260'>However,</span><span class='token pointer' id='tok-1_txt-261'>this</span><span class='token pointer' id='tok-1_txt-262'>no</span><span class='token pointer' id='tok-1_txt-263'>longer</span><span class='token pointer' id='tok-1_txt-264'>has</span><span class='token pointer' id='tok-1_txt-265'>to</span><span class='token pointer' id='tok-1_txt-266'>be</span><span class='token pointer' id='tok-1_txt-267'>the</span><span class='token pointer' id='tok-1_txt-268'>case.</span></p>
+								<p id=p269></p>
+								<p id=p269><span class='token pointer' id='tok-1_txt-269'>Just</span><span class='token pointer' id='tok-1_txt-270'>as</span><span class='token pointer' id='tok-1_txt-271'>the</span><span class='token pointer' id='tok-1_txt-272'>manufacturers</span><span class='token pointer' id='tok-1_txt-273'>of</span><span class='token pointer' id='tok-1_txt-274'>the</span><span class='token pointer' id='tok-1_txt-275'>earliest</span><span class='token pointer' id='tok-1_txt-276'>smartphones</span><span class='token pointer' id='tok-1_txt-277'>realized,</span><span class='token pointer' id='tok-1_txt-278'>to</span><span class='token pointer' id='tok-1_txt-279'>disturb</span><span class='token pointer' id='tok-1_txt-280'>a</span><span class='token pointer' id='tok-1_txt-281'>static</span><span class='token pointer' id='tok-1_txt-282'>industry,</span><span class='token pointer' id='tok-1_txt-283'>innovative</span><span class='token pointer' id='tok-1_txt-284'>products,</span><span class='token pointer' id='tok-1_txt-285'>advanced</span><span class='token pointer' id='tok-1_txt-286'>capabilities</span><span class='token pointer' id='tok-1_txt-287'>and</span><span class='token pointer' id='tok-1_txt-288'>options</span><span class='token pointer' id='tok-1_txt-289'>are</span><span class='token pointer' id='tok-1_txt-290'>key</span><span class='token pointer' id='tok-1_txt-291'>to</span><span class='token pointer' id='tok-1_txt-292'>revolutionize</span><span class='token pointer' id='tok-1_txt-293'>the</span><span class='token pointer' id='tok-1_txt-294'>market.</span></p>
+								<p id=p295></p>
+								<p id=p295><span class='token pointer' id='tok-1_txt-295'>For</span><span class='token pointer' id='tok-1_txt-296'>smartphones,</span><span class='token pointer' id='tok-1_txt-297'>it</span><span class='token pointer' id='tok-1_txt-298'>was</span><span class='token pointer' id='tok-1_txt-299'>taking</span><span class='token pointer' id='tok-1_txt-300'>the</span><span class='token pointer' id='tok-1_txt-301'>brick-sized</span><span class='token pointer' id='tok-1_txt-302'>cellular</span><span class='token pointer' id='tok-1_txt-303'>telephone</span><span class='token pointer' id='tok-1_txt-304'>that</span><span class='token pointer' id='tok-1_txt-305'>only</span><span class='token pointer' id='tok-1_txt-306'>provided</span><span class='token pointer' id='tok-1_txt-307'>incoming</span><span class='token pointer' id='tok-1_txt-308'>and</span><span class='token pointer' id='tok-1_txt-309'>outgoing</span><span class='token pointer' id='tok-1_txt-310'>calls</span><span class='token pointer' id='tok-1_txt-311'>and</span><span class='token pointer' id='tok-1_txt-312'>evolving</span><span class='token pointer' id='tok-1_txt-313'>it</span><span class='token pointer' id='tok-1_txt-314'>into</span><span class='token pointer' id='tok-1_txt-315'>a</span><span class='token pointer' id='tok-1_txt-316'>personalized</span><span class='token pointer' id='tok-1_txt-317'>smartphone</span><span class='token pointer' id='tok-1_txt-318'>that</span><span class='token pointer' id='tok-1_txt-319'>empowers</span><span class='token pointer' id='tok-1_txt-320'>people</span><span class='token pointer' id='tok-1_txt-321'>to</span><span class='token pointer' id='tok-1_txt-322'>operate</span><span class='token pointer' id='tok-1_txt-323'>remotely</span><span class='token pointer' id='tok-1_txt-324'>from</span><span class='token pointer' id='tok-1_txt-325'>anywhere</span><span class='token pointer' id='tok-1_txt-326'>in</span><span class='token pointer' id='tok-1_txt-327'>the</span><span class='token pointer' id='tok-1_txt-328'>world</span><span class='token pointer' id='tok-1_txt-329'>without</span><span class='token pointer' id='tok-1_txt-330'>compromising</span><span class='token pointer' id='tok-1_txt-331'>accessibility.</span></p>-->
+									</div>
+								</div>
+
+
+								<button type="button" id="testButton1" class="btn btn-primary pointer" style="text-align: center;">Save Task2</button>
+							</div>
+							<div class="card-body link" ; id="link1">
+								<a data-toggle="collapse" href="#txt_1,#link1" aria-expanded="true" aria-controls="txt_1">
+									Click to collapse Task2.
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="spacer"></div>
+
+					<!-- Questions About Article 1 -->
+
+					<div class="row">
+						<div class="col-md-12" id="htmlContainerAboutArticle1">
+							<div class="card">
+								<div class="card-header">
+
+									<a data-toggle="collapse" href="#txt_about_ar_1,#linkaboutar1" aria-expanded="false" aria-controls="about_ar_1_txt">
+										3.Questions About Article 1 (Click to expand)
+									</a>
+								</div>
+								<div id="txt_about_ar_1" class="collapse hide" role="tabpanel">
+									<h4>After reading Article 1, please answer the following three questions.</h4>
+									<div class="card-body text1" ; id="about_ar_1_txt">
+
+										<div class="panel panel-default">
+											<div class="panel-body">
+												<label>1.Select the difficulty level of Article 1 (1-5)</label>
+												<select id="article_1_dl" class="form-control" name="Article_1_DL">
+													<option selected="selected" value="0">- select one -</option>
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+												</select>
+											</div>
+										</div>
+
+										<div class="panel panel-default">
+											<div class="panel-body">
+												<fieldset>
+													<label>2.Choose two words/phrases you labeled, and explain why you select those difficulty levels.</label>
+													<textarea class="form-control" cols="120" name="article_1_two_words" rows="5"></textarea>
+												</fieldset>
+											</div>
+										</div>
+
+										<div class="panel panel-default">
+											<div class="panel-body">
+												<fieldset>
+													<label>3.Would you like a tool to help read the article? If yes, what functionalities do you think would be
+														helpful?</label>
+													<textarea class="form-control" cols="120" name="article_1_tool_help" rows="5"></textarea>
+												</fieldset>
+											</div>
+										</div>
+
+									</div>
+								</div>
+
+								<button type="button" id="testButtonAboutAr1" class="btn btn-primary pointer" style="text-align: center;">Save
+									Task3</button>
+							</div>
+							<div class="card-body link" ; id="linkaboutar1">
+								<a data-toggle="collapse" href="#txt_about_ar_1,#linkaboutar1" aria-expanded="true" aria-controls="txt_about_ar_1">
+									Click to collapse Task3.
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="spacer"></div>
+
+					<!-- Articel 2 -->
+					<div class="row">
+						<div class="col-md-12" id="htmlcontainer2">
+							<div class="card">
+								<div class="card-header">
+
+									<a data-toggle="collapse" href="#txt_2,#link2" aria-expanded="false" aria-controls="2_txt">
+										4.Article2 (Click to expand)
+									</a>
+								</div>
+								<div id="txt_2" class="collapse hide" role="tabpanel">
+									<div class="card-body text" ; id="2_txt">
+										<!--
+								<p id=p0><span class='token pointer' id='tok-2_txt-0'>DHS</span><span class='token pointer' id='tok-2_txt-1'>Report</span><span class='token pointer' id='tok-2_txt-2'>on</span><span class='token pointer' id='tok-2_txt-3'>Anonymous</span><span class='token pointer' id='tok-2_txt-4'>Warns</span><span class='token pointer' id='tok-2_txt-5'>of</span><span class='token pointer' id='tok-2_txt-6'>Potential</span><span class='token pointer' id='tok-2_txt-7'>Industrial</span><span class='token pointer' id='tok-2_txt-8'>Control</span><span class='token pointer' id='tok-2_txt-9'>Threat</span></p><p id=p10></p><p id=p10><span class='token pointer' id='tok-2_txt-10'>On</span><span class='token pointer' id='tok-2_txt-11'>Monday,</span><span class='token pointer' id='tok-2_txt-12'>the</span><span class='token pointer' id='tok-2_txt-13'>Public</span><span class='token pointer' id='tok-2_txt-14'>Intelligence</span><span class='token pointer' id='tok-2_txt-15'>Project</span><span class='token pointer' id='tok-2_txt-16'>released</span><span class='token pointer' id='tok-2_txt-17'>a</span><span class='token pointer' id='tok-2_txt-18'>NCCIC</span><span class='token pointer' id='tok-2_txt-19'>(National</span><span class='token pointer' id='tok-2_txt-20'>Cybersecurity</span><span class='token pointer' id='tok-2_txt-21'>and</span><span class='token pointer' id='tok-2_txt-22'>Communications</span><span class='token pointer' id='tok-2_txt-23'>Integration</span><span class='token pointer' id='tok-2_txt-24'>Center)</span><span class='token pointer' id='tok-2_txt-25'>memo</span><span class='token pointer' id='tok-2_txt-26'>written</span><span class='token pointer' id='tok-2_txt-27'>last</span><span class='token pointer' id='tok-2_txt-28'>month</span><span class='token pointer' id='tok-2_txt-29'>that</span><span class='token pointer' id='tok-2_txt-30'>flags</span><span class='token pointer' id='tok-2_txt-31'>interest</span><span class='token pointer' id='tok-2_txt-32'>in</span><span class='token pointer' id='tok-2_txt-33'>Industrial</span><span class='token pointer' id='tok-2_txt-34'>Control</span><span class='token pointer' id='tok-2_txt-35'>Systems</span><span class='token pointer' id='tok-2_txt-36'>by</span><span class='token pointer' id='tok-2_txt-37'>Anonymous.</span><span class='token pointer' id='tok-2_txt-38'>While</span><span class='token pointer' id='tok-2_txt-39'>there</span><span class='token pointer' id='tok-2_txt-40'>is</span><span class='token pointer' id='tok-2_txt-41'>clear</span><span class='token pointer' id='tok-2_txt-42'>interest,</span><span class='token pointer' id='tok-2_txt-43'>the</span><span class='token pointer' id='tok-2_txt-44'>DHS</span><span class='token pointer' id='tok-2_txt-45'>doubts</span><span class='token pointer' id='tok-2_txt-46'>that</span><span class='token pointer' id='tok-2_txt-47'>the</span><span class='token pointer' id='tok-2_txt-48'>loosely</span><span class='token pointer' id='tok-2_txt-49'>associative</span><span class='token pointer' id='tok-2_txt-50'>group</span><span class='token pointer' id='tok-2_txt-51'>currently</span><span class='token pointer' id='tok-2_txt-52'>has</span><span class='token pointer' id='tok-2_txt-53'>the</span><span class='token pointer' id='tok-2_txt-54'>skills</span><span class='token pointer' id='tok-2_txt-55'>to</span><span class='token pointer' id='tok-2_txt-56'>seriously</span><span class='token pointer' id='tok-2_txt-57'>disrupt</span><span class='token pointer' id='tok-2_txt-58'>ICS</span><span class='token pointer' id='tok-2_txt-59'>stability.</span></p><p id=p60></p><p id=p60><span class='token pointer' id='tok-2_txt-60'>'The</span><span class='token pointer' id='tok-2_txt-61'>loosely</span><span class='token pointer' id='tok-2_txt-62'>organized</span><span class='token pointer' id='tok-2_txt-63'>hacking</span><span class='token pointer' id='tok-2_txt-64'>collective</span><span class='token pointer' id='tok-2_txt-65'>known</span><span class='token pointer' id='tok-2_txt-66'>as</span><span class='token pointer' id='tok-2_txt-67'>Anonymous</span><span class='token pointer' id='tok-2_txt-68'>has</span><span class='token pointer' id='tok-2_txt-69'>recently</span><span class='token pointer' id='tok-2_txt-70'>expressed</span><span class='token pointer' id='tok-2_txt-71'>an</span><span class='token pointer' id='tok-2_txt-72'>interest</span><span class='token pointer' id='tok-2_txt-73'>in</span><span class='token pointer' id='tok-2_txt-74'>targeting</span><span class='token pointer' id='tok-2_txt-75'>industrial</span><span class='token pointer' id='tok-2_txt-76'>control</span><span class='token pointer' id='tok-2_txt-77'>systems</span><span class='token pointer' id='tok-2_txt-78'>(ICS).</span><span class='token pointer' id='tok-2_txt-79'>While</span><span class='token pointer' id='tok-2_txt-80'>Anonymous</span><span class='token pointer' id='tok-2_txt-81'>recently</span><span class='token pointer' id='tok-2_txt-82'>expressed</span><span class='token pointer' id='tok-2_txt-83'>intent</span><span class='token pointer' id='tok-2_txt-84'>to</span><span class='token pointer' id='tok-2_txt-85'>target</span><span class='token pointer' id='tok-2_txt-86'>ICS,</span><span class='token pointer' id='tok-2_txt-87'>they</span><span class='token pointer' id='tok-2_txt-88'>have</span><span class='token pointer' id='tok-2_txt-89'>not</span><span class='token pointer' id='tok-2_txt-90'>demonstrated</span><span class='token pointer' id='tok-2_txt-91'>a</span><span class='token pointer' id='tok-2_txt-92'>capability</span><span class='token pointer' id='tok-2_txt-93'>to</span><span class='token pointer' id='tok-2_txt-94'>inflict</span><span class='token pointer' id='tok-2_txt-95'>damage</span><span class='token pointer' id='tok-2_txt-96'>to</span><span class='token pointer' id='tok-2_txt-97'>these</span><span class='token pointer' id='tok-2_txt-98'>systems,</span><span class='token pointer' id='tok-2_txt-99'>the</span><span class='token pointer' id='tok-2_txt-100'>bulletin</span><span class='token pointer' id='tok-2_txt-101'>says.</span></p><p id=p102></p><p id=p102><span class='token pointer' id='tok-2_txt-102'>'The</span><span class='token pointer' id='tok-2_txt-103'>information</span><span class='token pointer' id='tok-2_txt-104'>available</span><span class='token pointer' id='tok-2_txt-105'>on</span><span class='token pointer' id='tok-2_txt-106'>Anonymous</span><span class='token pointer' id='tok-2_txt-107'>suggests</span><span class='token pointer' id='tok-2_txt-108'>they</span><span class='token pointer' id='tok-2_txt-109'>currently</span><span class='token pointer' id='tok-2_txt-110'>have</span><span class='token pointer' id='tok-2_txt-111'>a</span><span class='token pointer' id='tok-2_txt-112'>limited</span><span class='token pointer' id='tok-2_txt-113'>ability</span><span class='token pointer' id='tok-2_txt-114'>to</span><span class='token pointer' id='tok-2_txt-115'>conduct</span><span class='token pointer' id='tok-2_txt-116'>attacks</span><span class='token pointer' id='tok-2_txt-117'>targeting</span><span class='token pointer' id='tok-2_txt-118'>ICS.</span><span class='token pointer' id='tok-2_txt-119'>However</span><span class='token pointer' id='tok-2_txt-120'>experienced</span><span class='token pointer' id='tok-2_txt-121'>and</span><span class='token pointer' id='tok-2_txt-122'>skilled</span><span class='token pointer' id='tok-2_txt-123'>members</span><span class='token pointer' id='tok-2_txt-124'>of</span><span class='token pointer' id='tok-2_txt-125'>Anonymous</span><span class='token pointer' id='tok-2_txt-126'>in</span><span class='token pointer' id='tok-2_txt-127'>hacking</span><span class='token pointer' id='tok-2_txt-128'>could</span><span class='token pointer' id='tok-2_txt-129'>be</span><span class='token pointer' id='tok-2_txt-130'>able</span><span class='token pointer' id='tok-2_txt-131'>to</span><span class='token pointer' id='tok-2_txt-132'>develop</span><span class='token pointer' id='tok-2_txt-133'>capabilities</span><span class='token pointer' id='tok-2_txt-134'>to</span><span class='token pointer' id='tok-2_txt-135'>gain</span><span class='token pointer' id='tok-2_txt-136'>access</span><span class='token pointer' id='tok-2_txt-137'>and</span><span class='token pointer' id='tok-2_txt-138'>trespass</span><span class='token pointer' id='tok-2_txt-139'>on</span><span class='token pointer' id='tok-2_txt-140'>control</span><span class='token pointer' id='tok-2_txt-141'>system</span><span class='token pointer' id='tok-2_txt-142'>networks</span><span class='token pointer' id='tok-2_txt-143'>very</span><span class='token pointer' id='tok-2_txt-144'>quickly."</span></p><p id=p145></p><p id=p145><span class='token pointer' id='tok-2_txt-145'>In</span><span class='token pointer' id='tok-2_txt-146'>the</span><span class='token pointer' id='tok-2_txt-147'>NCCIC</span><span class='token pointer' id='tok-2_txt-148'>memo</span><span class='token pointer' id='tok-2_txt-149'>the</span><span class='token pointer' id='tok-2_txt-150'>DHS</span><span class='token pointer' id='tok-2_txt-151'>focused</span><span class='token pointer' id='tok-2_txt-152'>on</span><span class='token pointer' id='tok-2_txt-153'>was</span><span class='token pointer' id='tok-2_txt-154'>a</span><span class='token pointer' id='tok-2_txt-155'>Twitter</span><span class='token pointer' id='tok-2_txt-156'>message</span><span class='token pointer' id='tok-2_txt-157'>that</span><span class='token pointer' id='tok-2_txt-158'>published</span><span class='token pointer' id='tok-2_txt-159'>the</span><span class='token pointer' id='tok-2_txt-160'>results</span><span class='token pointer' id='tok-2_txt-161'>of</span><span class='token pointer' id='tok-2_txt-162'>'browsing</span><span class='token pointer' id='tok-2_txt-163'>the</span><span class='token pointer' id='tok-2_txt-164'>directory</span><span class='token pointer' id='tok-2_txt-165'>tree</span><span class='token pointer' id='tok-2_txt-166'>for</span><span class='token pointer' id='tok-2_txt-167'>Siemens</span><span class='token pointer' id='tok-2_txt-168'>SIMATIC</span><span class='token pointer' id='tok-2_txt-169'>software."</span></p>
+							-->
+									</div>
+								</div>
+
+
+								<button type="button" id="testButton2" class="btn btn-primary pointer" style="text-align: center;">Save Task4</button>
+							</div>
+							<div class="card-body link" ; id="link2">
+								<a data-toggle="collapse" href="#txt_2,#link2" aria-expanded="true" aria-controls="txt_2">
+									Click to collapse Task4.
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="spacer"></div>
+
+					<!-- Questions About Article 2 -->
+
+					<div class="row">
+						<div class="col-md-12" id="htmlContainerAboutArticle2">
+							<div class="card">
+								<div class="card-header">
+
+									<a data-toggle="collapse" href="#txt_about_ar_2,#linkaboutar2" aria-expanded="false" aria-controls="about_ar_2_txt">
+										5.Questions About Article 2 (Click to expand)
+									</a>
+								</div>
+								<div id="txt_about_ar_2" class="collapse hide" role="tabpanel">
+									<h4>After reading Article 2, please answer the following three questions.</h4>
+									<div class="card-body text2" ; id="about_ar_2_txt">
+
+										<div class="panel panel-default">
+											<div class="panel-body">
+												<label>1.Select the difficulty level of Article 2 (1-5)</label>
+												<select id="article_2_dl" class="form-control" name="Article_2_DL">
+													<option selected="selected" value="0">- select one -</option>
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+												</select>
+											</div>
+										</div>
+
+										<div class="panel panel-default">
+											<div class="panel-body">
+												<fieldset>
+													<label>2.Choose two words/phrases you labeled, and explain why you select those difficulty levels.</label>
+													<textarea class="form-control" cols="120" name="article_2_two_words" rows="5"></textarea>
+												</fieldset>
+											</div>
+										</div>
+
+										<div class="panel panel-default">
+											<div class="panel-body">
+												<fieldset>
+													<label>3.Would you like a tool to help read the article? If yes, what functionalities do you think would be
+														helpful?</label>
+													<textarea class="form-control" cols="120" name="article_2_tool_help" rows="5"></textarea>
+												</fieldset>
+											</div>
+										</div>
+
+									</div>
+								</div>
+
+								<button type="button" id="testButtonAboutAr2" class="btn btn-primary pointer" style="text-align: center;">Save
+									Task5</button>
+							</div>
+							<div class="card-body link" ; id="linkaboutar2">
+								<a data-toggle="collapse" href="#txt_about_ar_2,#linkaboutar2" aria-expanded="true" aria-controls="txt_about_ar_2">
+									Click to collapse Task5.
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="spacer"></div>
+
+					<div class="row">
+						<div class="col-md-12">
+							<div class="form-group">
+								<input type="text" id="finalsubmission" name="finalsubmission" style="display:none;" />
+								
+								<!-- <button type="button" id="submitButton" class="btn btn-primary pointer">Submit</button> -->
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+			<template id="buttons">
+				<div class="container-fluid">
+					<div class="form-group">
+						<div class="row">
+							<button type="button" id="B1" class="btn pointer btn-light labelbutton B1" field="B1" value="B1">1</button>
+							<button type="button" id="B2" class="btn pointer btn-light labelbutton B2" field="B2" value="B2">2</button>
+							<button type="button" id="B3" class="btn pointer btn-light labelbutton B3" field="B3" value="B3">3</button>
+							<button type="button" id="B4" class="btn pointer btn-light labelbutton B4" field="B4" value="B4">4</button>
+							<button type="button" id="B5" class="btn pointer btn-light labelbutton B5" field="B5" value="B5">5</button>
+							<button type="button" id="B6" class="btn pointer btn-light labelbutton B6" field="B6" value="B6">6</button>
+							<button type="button" id="B7" class="btn pointer btn-light labelbutton B7" field="B7" value="B7">7</button>
+							<button type="button" id="B8" class="btn pointer btn-light labelbutton B8" field="B8" value="B8">8</button>
+							<button type="button" id="B9" class="btn pointer btn-light labelbutton B9" field="B9" value="B9">9</button>
+							<button type="button" id="B10" class="btn pointer btn-light labelbutton B10" field="B10" value="B10">10</button>
+						</div>
+					</div>
+
+
+					<!--
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-md-4">
+                        <button type="button" id="LOC" class="btn pointer btn-light labelbutton LOC" field="LOC" value="LOC">LOC</button>
+                    </div>
+                    <div class="col-md-4">
+                        <button type="button" id="PER" class="btn pointer btn-light labelbutton PER" field="PER" value="PER">PER</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <button type="button" id="ORG" class="btn pointer btn-light labelbutton ORG" field="ORG" value="ORG" >ORG</button>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-md-4">
+                        <button type="button" id="O" class="btn pointer btn-outline-secondary" value="O">No label</button>
+                    </div>
+                </div>
+            </div>
+           -->
+				</div>
+			</template>
+
+		</section>
+
+	</body>
+</html>
