@@ -49,7 +49,7 @@ function LoadFile() {
         // local modify
         // $("#" + articleid[i2 - 1] + "_txt").load("https://cdn.jsdelivr.net/gh/ktd4869/ktd4869.github.io@3.0/testing_json/" + articleid[i2 - 1] + "_txt.html");
         //修改为http
-        $("#" + articleid[i2 - 1] + "_txt").load("https://cdn.jsdelivr.net/gh/ktd4869/ktd4869.github.io@4.1/html/" + articleid[i2 - 1] + "_txt.html");
+        $("#" + articleid[i2 - 1] + "_txt").load("https://ktd4869.github.io/Questionnaire_v1.4/html_new/" + articleid[i2 - 1] + "_txt.html");
         // $.get("html/"+articleid[i2 - 1]+"_txt.html", function(data) {
         //     $("#"+articleid[i2 - 1]+"_txt").html(data);
         //  }, 'text');
