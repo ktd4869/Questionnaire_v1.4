@@ -268,7 +268,8 @@ $(document).ready(function () {
             },
             title: function () {
                 var t = $(this)[0];
-                return "Labeled: " + t.className;
+                //return "Labeled: " + t.className;
+                return "Select one difficulty level (1-10)";
             },
             html: true,
             trigger: "focus"
